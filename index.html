@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HD Traders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">HD Traders</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>"Your One-Stop Shop for Home Essentials "
+
+              <br>
+              HD TRADERS
+            </h1>
+            <p>Explore our wide range of ACs, Refrigerators, TVs, Mattresses, Tiles, and more.
+            </p>
+            <!-- <a href="#products" class="btn">Shop Now</a> -->
+
+
+
+<a  class="btn" href="https://wa.me/9026996287?text=Hi" target="_blank">Contact</a>
+
+
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="product-categories">
+        <h2>Our Products</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="ac.avif" alt="AC">
+                <h3>Air Conditioners</h3>
+            </div>
+            <div class="category">
+                <img src="fridge.avif" alt="Refrigerator">
+                <h3>Refrigerators</h3>
+            </div>
+            <div class="category">
+                <img src="tv.jpeg" alt="TV">
+                <h3>Televisions</h3>
+            </div>
+            <div class="category">
+                <img src="mattress.jpeg" alt="Mattress">
+                <h3>Mattresses</h3>
+            </div>
+            <div class="category">
+                <img src="tiles.jpeg" alt="Tiles">
+                <h3>Tiles</h3>
+            </div>
+            <div class="category">
+                <img src="hard.jpg" alt="Hardware">
+                <h3>Hardware</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>HD Traders has been providing high-quality home essentials for over a decade. Our mission is to offer the best products at affordable prices.</p>
+    </section>
+
+    <!-- Contact Us -->
+<section id="contact" class="contact-us">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+        <p>Email: contact@hdtraders.com</p>
+        <p>Phone: +91 9026996287</p>
+        <p>Address: Dhakherwa chauraha,Lakhimpur-kheri (UP)</p>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HD Traders. All rights reserved.</p>
+    </footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+        // Collect form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Create the WhatsApp message
+        const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. Here is my message: ${message}`;
+
+        // Encode the message for use in a URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+
+        // Set the WhatsApp number (replace with your WhatsApp number)
+        const whatsappNumber = '9026996287'; // Replace with your WhatsApp number
+
+        // Create the WhatsApp URL
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        // Redirect to WhatsApp
+        window.location.href = whatsappURL;
+    });
+</script>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
