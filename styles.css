@@ -145,9 +145,15 @@ nav {
 }
 
 /* About Us */
+
+
+
+
 .about-us {
-    padding: 50px 20px;
-    background: #f4f4f4;
+    padding: 55px 25px;
+    background: #411640;
+    height: 50vh;
+    color: #ece6e6;
     text-align: center;
 }
 
